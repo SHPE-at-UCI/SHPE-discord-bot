@@ -3,7 +3,7 @@ module.exports = {
     description: "Sets up roles and committees",
 
     async execute(message, args, Discord, client) {
-        const channel = '762902109451583488';
+        const channel = '806079231645057034';
         const shpetinas = message.guild.roles.cache.find(role => role.name === "shpetinas");
         const professional = message.guild.roles.cache.find(role => role.name === "professional");
         const shpejr = message.guild.roles.cache.find(role => role.name === "shpe jr. mentor");
@@ -45,19 +45,19 @@ module.exports = {
             if (!reaction.message.guild) return;
 
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.id === shpetinasEmoji) {
+                if (reaction.emoji.name === 'shpetinas') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(shpetinas);
                 }
-                if (reaction.emoji.id === professionalEmoji) {
+                if (reaction.emoji.name === 'professional') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(professional);
                 }
-                if (reaction.emoji.id === shpejrEmoji) {
+                if (reaction.emoji.name === 'shpejr') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(shpejr);
                 }
-                if (reaction.emoji.id === techEmoji) {
+                if (reaction.emoji.name === 'tech') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(techy);
                 }
-                if (reaction.emoji.id === eventsEmoji) {
+                if (reaction.emoji.name === 'EPC') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(eventsPlanning);
                 }
             } else {
@@ -75,19 +75,19 @@ module.exports = {
 
 
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.id === shpetinasEmoji) {
+                if (reaction.emoji.name === 'shpetinas') {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(shpetinas);
                 }
-                if (reaction.emoji.id === professionalEmoji) {
+                if (reaction.emoji.name === 'professional') {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(professional);
                 }
-                if (reaction.emoji.id === shpejrEmoji) {
+                if (reaction.emoji.name === 'shpejr') {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(shpejr);
                 }
-                if (reaction.emoji.id === techEmoji) {
+                if (reaction.emoji.name === 'tech') {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(techy);
                 }
-                if (reaction.emoji.id === eventsEmoji) {
+                if (reaction.emoji.name === 'EPC') {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(eventsPlanning);
                 }
             } else {
