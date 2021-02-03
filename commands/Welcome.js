@@ -3,6 +3,7 @@ const { execute } = require("./ReactionRole");
 module.exports = {
     name: 'welcome',
     description: "Provides a welcome message",
+    //test comment
     async execute(message, args, Discord, client){
         let welcome = "Welcome to the **SHPE Tech Comittee** Server";
         const shpetinasEmoji = '<:shpetinas:806086863244623883>';
