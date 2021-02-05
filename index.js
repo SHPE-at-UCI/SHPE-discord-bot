@@ -28,13 +28,16 @@ client.once('ready', () => {
 });
 
 
-client.on('message', message =>{
+client.on('message', message => {
     //look for !
     if(!message.content.startsWith(prefix) || message.author.bot) return;
     
     //parse message to get command  
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
+
+    //deletes command given by user
+    message.delete({ timeout: 1000 });
 
     //list of commands
     switch (command) {
