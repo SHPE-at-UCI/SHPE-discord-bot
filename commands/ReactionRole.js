@@ -35,7 +35,7 @@ module.exports = {
         const twoEmoji = '<:2_:806090740211646485>';
         const threeEmoji = '<:3_:806090740421492746>';
         const fourEmoji = '<:4_:807035515646902303>';
-        const transferEmoji = '<:transfer:806090740030898197>';
+        const transferEmoji = '<:transfer:807045116904472587>';
 
         // MEMBER STATUS
 
