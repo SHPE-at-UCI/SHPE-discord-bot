@@ -81,7 +81,10 @@ module.exports = {
         yearEmbed.react(fourEmoji);
         yearEmbed.react(transferEmoji);
 
-        // Assigns Committee Role to user when Reaction Clicked
+        ///////////////////////////////////// ASSIGN ROLES //////////////////////////////////////
+        // Assigns Role to user when Reaction clicked or unselected
+
+        // ADD
         client.on('messageReactionAdd', async (reaction, user) => {
             if (reaction.message.partial) await reaction.message.fetch();
 
@@ -139,7 +142,7 @@ module.exports = {
 
         });
 
-        // Removes Committee Role from user when Reaction Unselected
+        // REMOVE
         client.on('messageReactionRemove', async (reaction, user) => {
 
             if (reaction.message.partial) await reaction.message.fetch();
