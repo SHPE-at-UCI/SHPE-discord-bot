@@ -8,17 +8,17 @@ module.exports = {
         // Accessing Created Roles from Discord Server
 
         const channel = '806079231645057034'; // "Roles" Channel ID
-        const shpetinas = message.guild.roles.cache.find(role => role.name === "shpetinas");
-        const professional = message.guild.roles.cache.find(role => role.name === "professional");
-        const shpejr = message.guild.roles.cache.find(role => role.name === "shpe jr. mentor");
-        const techy = message.guild.roles.cache.find(role => role.name === "techy");
-        const eventsPlanning = message.guild.roles.cache.find(role => role.name === "events planning committee");
+        const shpetinas = message.guild.roles.cache.find(role => role.name === "Shpetinas");
+        const professional = message.guild.roles.cache.find(role => role.name === "Professional");
+        const shpejr = message.guild.roles.cache.find(role => role.name === "SHPE Jr.");
+        const techy = message.guild.roles.cache.find(role => role.name === "Tech");
+        const eventsPlanning = message.guild.roles.cache.find(role => role.name === "Events Planning Committee");
 
-        const freshman = message.guild.roles.cache.find(role => role.name === "freshman");
-        const sophomore = message.guild.roles.cache.find(role => role.name === "sophopmore");
-        const junior = message.guild.roles.cache.find(role => role.name === "junior");
-        const senior = message.guild.roles.cache.find(role => role.name === "senior");
-        const transfer = message.guild.roles.cache.find(role => role.name === "transfer");
+        const freshman = message.guild.roles.cache.find(role => role.name === "Freshman");
+        const sophomore = message.guild.roles.cache.find(role => role.name === "Sophopmore");
+        const junior = message.guild.roles.cache.find(role => role.name === "Junior");
+        const senior = message.guild.roles.cache.find(role => role.name === "Senior");
+        const transfer = message.guild.roles.cache.find(role => role.name === "Transfer");
 
         //////////////////////////////////// CUSTOM EMOJI ID's /////////////////////////////////////
         // Assigns ID's to Custom Emoji ID's.Use /: emojiname: in Dicord to find ID
@@ -70,7 +70,7 @@ module.exports = {
                 + `${oneEmoji} for Freshman\n`
                 + `${twoEmoji} for Sophomore\n`
                 + `${threeEmoji} for Junior\n`
-                + `${fourEmoji} for Senior\n`
+                + `${fourEmoji} for Senior (+)\n`
                 + `${transferEmoji} I'm also a Transfer Student!`);
 
         // Message Embedded with Custom Year Reactions
