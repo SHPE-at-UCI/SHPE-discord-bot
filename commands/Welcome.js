@@ -17,10 +17,9 @@ module.exports = {
         //////////////////////////////////// CUSTOM EMOJI ID's /////////////////////////////////////
         // Assigns ID's to Custom Emoji ID's.Use /: emojiname: in Dicord to find ID
 
-        const generalMemberEmoji = ':hatched_chick:';
-        const alumniEmoji = ':chicken:';
-        const professionalEmoji = ':rocket:';
-        const visitorEmoji = ':palm_tree:';
+        const generalMemberEmoji = '<:generalmember:823775953468653638>';
+        const alumniEmoji = '<:alumni:823775953560797184>';
+        const professionalEmoji = '<:professionalrole:823775953468653658>';
 
         //////////////////////////////////// MESSAGE EMBEDS /////////////////////////////////////
         // Creates Message Embed with Embed Color, Title, and Description
@@ -29,7 +28,7 @@ module.exports = {
                                  We will seldom use the @everyone ping, so please do not mute us But the @everyone ping will be used right before an event
                                  starts or when a deadline is approaching.`;
         const recapDescrpt = `Missed a workshop or an event? We'll have the resources for you posted for you to look through on your own time. Recordings 
-                              may be released a bit later, but look in that text-channel for updates as to when we post it :smile:`;
+                              may be released a bit later, but check respective text-channels for updates as to when we post it :smile:`;
         
         let rolesMessage = new Discord.MessageEmbed()
         .setColor('#f0633d')
@@ -37,8 +36,7 @@ module.exports = {
         .setDescription('**To access the SHPE Discord Channels we ask that you change your nickname to your real name and choose a role from the following:** \n\n'
             + `${generalMemberEmoji} for General Members\n`
             + `${alumniEmoji} for Alumni\n`
-            + `${professionalEmoji} for Proffesional\n`
-            + `${visitorEmoji} for Just Vibing\n`
+            + `${professionalEmoji} for Professional\n`
             + `you can choose your committee and other fun roles in the <#806079231645057034> text channel` );
 
 
@@ -56,10 +54,9 @@ module.exports = {
         // Message Embedded with Custom Committee Reactions
         await message.channel.send(rolesMessage)
         .then(sentEmbed => {
-            sentEmbed.react('🐥')
-            sentEmbed.react('🐔')
-            sentEmbed.react('🚀')
-            sentEmbed.react('🌴')
+            sentEmbed.react(generalMemberEmoji)
+            sentEmbed.react(alumniEmoji)
+            sentEmbed.react(professionalEmoji)
         }).then(msg =>{
             message.channel.send(anouncementsEmbed);
         }).then(msg =>{
@@ -80,17 +77,15 @@ module.exports = {
             if (reaction.message.channel.id == channel)
             {
                 switch (reaction.emoji.name) {
-                    case '🐥':
+                    case generalMemberEmoji:
                         await reaction.message.guild.members.cache.get(user.id).roles.add(generalMember);
                         break;
-                    case '🐔':
+                    case alumniEmoji:
                         await reaction.message.guild.members.cache.get(user.id).roles.add(alumni);
                         break;
-                    case '🚀':
+                    case professionalEmoji:
                         await reaction.message.guild.members.cache.get(user.id).roles.add(professional);
                         break;
-                    case '🌴':
-                        await reaction.message.guild.members.cache.get(user.id).roles.add(visitor);
                     default:
                         break;
                 }
@@ -111,17 +106,15 @@ module.exports = {
             if (reaction.message.channel.id == channel)
             {
                 switch (reaction.emoji.name) {
-                    case '🐥':
+                    case generalMemberEmoji:
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(generalMember);
                         break;
-                    case '🐔':
+                    case alumniEmoji:
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(alumni);
                         break;
-                    case '🚀':
+                    case professionalEmoji:
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(professional);
                         break;
-                    case '🌴':
-                        await reaction.message.guild.members.cache.get(user.id).roles.remove(visitor);
                     default:
                         break;
                 }

@@ -47,6 +47,9 @@ client.on('message', message => {
         case 'welcome':
             client.commands.get('welcome').execute(message, args, Discord, client);
             break;
+        case 'suggest':
+            client.commands.get('suggestions').execute(message, args, Discord, client);
+            break;
         default:
             break;
     }
