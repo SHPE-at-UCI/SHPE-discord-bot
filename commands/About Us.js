@@ -10,7 +10,7 @@ module.exports = {
 
                                 Here, our mission is simple: Change lives by empowering the Hispanic community to realize its fullest potential. We do this through STEM awareness, access, support, and development. With this mission we are able to assist you in your professional and academic goals, while at the same time giving you a safe place to grow and thrive. 
 
-                                SHPE\’s vision is a world where Hispanics are highly valued and influential as the leading innovators, scientists, mathematicians, and engineers.`;
+                                SHPE has a vision of a world where Hispanics are highly valued and influential as the leading innovators, scientists, mathematicians, and engineers.`;
         const coreDescrpt = `**Familia**
                                 We take responsibility for our collective strength and passion by developing communities, building a diverse and inclusive membership, and challenging each other to be our best.
 
