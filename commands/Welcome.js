@@ -16,9 +16,9 @@ module.exports = {
         //////////////////////////////////// CUSTOM EMOJI ID's /////////////////////////////////////
         // Assigns ID's to Custom Emoji ID's.Use /: emojiname: in Dicord to find ID
 
-        const generalMemberEmoji = '<:generalmember:823775953468653638>';
-        const alumniEmoji = '<:alumni:823775953560797184>';
-        const professionalEmoji = '<:professionalrole:823775953468653658>';
+        const generalMemberEmoji = '<:generalmember:824147467117002752>';
+        const alumniEmoji = '<:alumni:824147467159076894>';
+        const professionalEmoji = '<:professionalrole:824147466953818153>';
 
         //////////////////////////////////// MESSAGE EMBEDS /////////////////////////////////////
         // Creates Message Embed with Embed Color, Title, and Description
@@ -34,12 +34,13 @@ module.exports = {
         let rolesMessage = new Discord.MessageEmbed()
         .setColor('#f0633d')
         .setTitle('Roles & Names')
-        .setDescription('**To access the SHPE Discord Channels we ask that you change your nickname to your real name and choose a role from the following:** \n\n'
+        .setDescription('**To access the SHPE Discord Channels we ask that you change your nickname to your __real name__ and choose a role from the following:** \n\n'
             + `${generalMemberEmoji} for General Members\n`
             + `${alumniEmoji} for Alumni\n`
             + `${professionalEmoji} for Professional\n`
-            + `you can choose your committee and other fun roles in the <#806079231645057034> text channel` );
+            + `you can choose your committee and other fun roles in the <#806176240393519185> text channel` );
 
+        /*
         let anouncementsEmbed = new Discord.MessageEmbed()
             .setColor('#74aabe')
             .setTitle('Announcements')
@@ -49,6 +50,7 @@ module.exports = {
             .setColor('#f3f3f3')
             .setTitle('Recaps')
             .setDescription(recapDescrpt);
+        */
 
         // Message Embedded with Custom Committee Reactions
         await message.channel.send(rolesMessage)

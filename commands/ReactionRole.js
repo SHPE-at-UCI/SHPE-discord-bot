@@ -7,7 +7,7 @@ module.exports = {
         ////////////////////////////////////////// ROLES ///////////////////////////////////////////
         // Accessing Created Roles from Discord Server
 
-        const channel = '806079231645057034'; // "Roles" Channel ID
+        const channel = '806176240393519185'; // "Roles" Channel ID
         const shpetinas = message.guild.roles.cache.find(role => role.name === "Shpetinas");
         const professional = message.guild.roles.cache.find(role => role.name === "Professional");
         const shpejr = message.guild.roles.cache.find(role => role.name === "SHPE Jr.");
@@ -39,19 +39,19 @@ module.exports = {
         // Assigns ID's to Custom Emoji ID's.Use /: emojiname: in Dicord to find ID
 
         // COMMITTEES
-        const shpetinasEmoji = '<:shpetinas:824148606352359456>';
-        const professionalEmoji = '<:professional:824148605790322739>';
-        const shpejrEmoji = '<:shpejr:824148605832790017>';
-        const techEmoji = '<:tech:824148605937123384>';
-        const eventsEmoji = '<:EPC:824148606084841472>';
+        const shpetinasEmoji = '<:shpetinas:824147468774146058>';
+        const professionalEmoji = '<:professional:824147467050287114>';
+        const shpejrEmoji = '<:shpejr:824147467318067200>';
+        const techEmoji = '<:tech:824147467830034472>';
+        const eventsEmoji = '<:EPC:824147467158421514>';
 
         // YEAR
-        const oneEmoji = '<:1_:806090740559773706>';
-        const twoEmoji = '<:2_:806090740211646485>';
-        const threeEmoji = '<:3_:806090740421492746>';
-        const fourEmoji = '<:4_:823787269193990155>';
-        const fifthEmoji = '<:5_:823787269264637952>';
-        const transferEmoji = '<:transfer:807045116904472587>';
+        const oneEmoji = '<:1_:824147466684465214>';
+        const twoEmoji = '<:2_:824147467070603284>';
+        const threeEmoji = '<:3_:824147467128799292>';
+        const fourEmoji = '<:4_:824147466853154838>';
+        const fifthEmoji = '<:5_:824147467129585694>';
+        const transferEmoji = '<:transfer:824147467577720862>';
 
         // MAJOR
         // MUST USE EMOJIS, FOR EXAMPLE DON'T USE 'rocket' INSTEAD OF OF 🚀
@@ -68,7 +68,6 @@ module.exports = {
         const biosci = '🦖';
         const compsci = '🖨';
         const notHere = '😭';
-
 
 
         //////////////////////////////////// MESSAGE EMBEDS /////////////////////////////////////

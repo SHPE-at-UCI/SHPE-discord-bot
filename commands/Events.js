@@ -6,7 +6,7 @@ module.exports = {
     //OUR PLAN FOR THIS COMMAND IS TO EVENTUALLY HAVE A CREATEEVENT FUNCTION, WHERE BOARD MEMBERS WOULD GET A DM AND THEY WOULD FILL OUT "generalInfo" AND "zoomLink" VARIABLE INFORMATION
 
     async execute(message, args, Discord, client) {
-        const channel = '824130980343971841';
+        const channel = '824147855387787264';
 
         const generalInfo = `**__What__**
                             Join our board for a scribbl.io social!
