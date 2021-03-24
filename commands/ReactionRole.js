@@ -26,9 +26,11 @@ module.exports = {
         const civilE = message.guild.roles.cache.find(role => role.name === "Civil Engineering");
         const computerE = message.guild.roles.cache.find(role => role.name === "Computer Engineering");
         const computerSciE = message.guild.roles.cache.find(role => role.name === "Computer Science and Engineering");
+        const softwareE = message.guild.roles.cache.find(role => role.name === "Software Engineering"); 
         const electricalE = message.guild.roles.cache.find(role => role.name === "Electrical Engineering");
         const environmentalE = message.guild.roles.cache.find(role => role.name === "Environmental Engineering");
         const mechanicalE = message.guild.roles.cache.find(role => role.name === "Mechanical Engineering");
+        const biomedE = message.guild.roles.cache.find(role => role.name === "Biomedical Engineering");
         const biologicalSci = message.guild.roles.cache.find(role => role.name === "Biological Sciences");
         const computerSci = message.guild.roles.cache.find(role => role.name === "Computer Science");
 
@@ -37,11 +39,11 @@ module.exports = {
         // Assigns ID's to Custom Emoji ID's.Use /: emojiname: in Dicord to find ID
 
         // COMMITTEES
-        const shpetinasEmoji = '<:shpetinas:806086863244623883>';
-        const professionalEmoji = '<:professional:806086863013412955>';
-        const shpejrEmoji = '<:shpejr:806086863042641920>';
-        const techEmoji = '<:tech:806086863025995778>';
-        const eventsEmoji = '<:EPC:806300282492289095>';
+        const shpetinasEmoji = '<:shpetinas:824148606352359456>';
+        const professionalEmoji = '<:professional:824148605790322739>';
+        const shpejrEmoji = '<:shpejr:824148605832790017>';
+        const techEmoji = '<:tech:824148605937123384>';
+        const eventsEmoji = '<:EPC:824148606084841472>';
 
         // YEAR
         const oneEmoji = '<:1_:806090740559773706>';
@@ -58,9 +60,11 @@ module.exports = {
         const civil = '🛠';
         const comp = '💻';
         const cse = '🖥';
+        const soft = '📟';
         const elec = '🔌';
         const env = '🌴';
         const meche = '⚙️';
+        const biomed = '🦠';
         const biosci = '🦖';
         const compsci = '🖨';
         const notHere = '😭';
@@ -120,9 +124,11 @@ module.exports = {
                 + `${civil} Civil Engineering\n`
                 + `${comp} Computer Engineering\n`
                 + `${cse} Computer Science and Engineering\n`
+                + `${soft} Software Engineering\n`
                 + `${elec} Electrical Engineering\n`
                 + `${env} Environmental Engineering\n`
                 + `${meche} Mechanical Engineering\n`
+                + `${biomed} Biomedical Engineering\n`
                 + `${biosci} Biological Sciences\n`
                 + `${compsci} Computer Science\n`
                 + `${notHere} My Major isn't Here!`);
@@ -135,9 +141,11 @@ module.exports = {
         majorEmbed.react(civil);
         majorEmbed.react(comp);
         majorEmbed.react(cse);
+        majorEmbed.react(soft);
         majorEmbed.react(elec);
         majorEmbed.react(env);
         majorEmbed.react(meche);
+        majorEmbed.react(biomed);
         majorEmbed.react(biosci);
         majorEmbed.react(compsci);
         majorEmbed.react(notHere);
@@ -215,6 +223,9 @@ module.exports = {
                 if (reaction.emoji.name === '🖥') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(computerSciE);
                 }
+                if (reaction.emoji.name === '📟') {
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(softwareE);
+                }
                 if (reaction.emoji.name === '🔌') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(electricalE);
                 }
@@ -223,6 +234,9 @@ module.exports = {
                 }
                 if (reaction.emoji.name === '⚙️') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(mechanicalE);
+                }
+                if (reaction.emoji.name === '🦠') {
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(biomedE);
                 }
                 if (reaction.emoji.name === '🦖') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(biologicalSci);
@@ -310,7 +324,10 @@ module.exports = {
                 }                                                                
                 if (reaction.emoji.name === '🖥') {                         
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(computerSciE);
-                }                                                                 
+                } 
+                if (reaction.emoji.name === '📟') {
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(softwareE);
+                }
                 if (reaction.emoji.name === '🔌') {                    
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(electricalE);
                 }                                                                 
@@ -319,7 +336,10 @@ module.exports = {
                 }                                                               
                 if (reaction.emoji.name === '⚙️') {                           
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(mechanicalE);
-                }                                                                
+                }      
+                if (reaction.emoji.name === '🦠') {
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(biomedE);
+                }
                 if (reaction.emoji.name === '🦖') {                           
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(biologicalSci);
                 }                                                                 
