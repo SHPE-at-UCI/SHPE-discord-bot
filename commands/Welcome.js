@@ -34,11 +34,12 @@ module.exports = {
         let rolesMessage = new Discord.MessageEmbed()
         .setColor('#f0633d')
         .setTitle('Roles & Names')
-        .setDescription('**To access the SHPE Discord Channels we ask that you change your nickname to your __real name__ and choose a role from the following:** \n\n'
-            + `${generalMemberEmoji} for General Members\n`
-            + `${alumniEmoji} for Alumni\n`
-            + `${professionalEmoji} for Professional\n`
-            + `you can choose your committee and other fun roles in the <#806176240393519185> text channel` );
+        .setDescription(`**To access the SHPE Discord Channels we ask that you change your nickname to your __real name__ and choose a role from the following:** \n
+            If you are a part of __MemberSHPE__ please let a @Board member know in order to get access to our exclusive MemberSHPE channel!\n
+            ${generalMemberEmoji} for General Members\n
+            ${alumniEmoji} for Alumni\n
+            ${professionalEmoji} for Professional\n
+            you can choose your committee and other fun roles in the #roles text channel `);
 
         /*
         let anouncementsEmbed = new Discord.MessageEmbed()
