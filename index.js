@@ -59,6 +59,9 @@ client.on('message', message => {
         case 'event':
             client.commands.get('events').execute(message, args, Discord, client);
             break;
+        case 'about':
+            client.commands.get('about').execute(message, args, Discord, client);
+            break;
         default:
             break;
     }
