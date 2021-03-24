@@ -76,13 +76,13 @@ module.exports = {
             if (reaction.message.channel.id == channel)
             {
                 switch (reaction.emoji.name) {
-                    case generalMemberEmoji:
+                    case "generalmember":
                         await reaction.message.guild.members.cache.get(user.id).roles.add(generalMember);
                         break;
-                    case alumniEmoji:
+                    case "alumni":
                         await reaction.message.guild.members.cache.get(user.id).roles.add(alumni);
                         break;
-                    case professionalEmoji:
+                    case "professionalrole":
                         await reaction.message.guild.members.cache.get(user.id).roles.add(professional);
                         break;
                     default:
@@ -105,13 +105,13 @@ module.exports = {
             if (reaction.message.channel.id == channel)
             {
                 switch (reaction.emoji.name) {
-                    case generalMemberEmoji:
+                    case "generalmember":
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(generalMember);
                         break;
-                    case alumniEmoji:
+                    case "alumni":
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(alumni);
                         break;
-                    case professionalEmoji:
+                    case "professionalrole":
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(professional);
                         break;
                     default:
