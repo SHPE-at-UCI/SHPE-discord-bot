@@ -58,10 +58,6 @@ module.exports = {
             sentEmbed.react(generalMemberEmoji)
             sentEmbed.react(alumniEmoji)
             sentEmbed.react(professionalEmoji)
-        }).then(msg =>{
-            message.channel.send(anouncementsEmbed);
-        }).then(msg =>{
-            message.channel.send(eventsEmbed);
         }).catch(() => console.error('One of the emojis failed to react.'));
     
 
