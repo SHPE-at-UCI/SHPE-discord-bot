@@ -4,7 +4,7 @@ module.exports = {
     description: "Provides a suggestion box style message",
 
     async execute(message, args, Discord, client) {
-        const channel = '823778210239086642';
+        const channel = '823753910279864381';
 
         const suggestionDescrpt = `We are always improving our server! If you have any feedback, comments, or suggestions, drop them here!`;
 

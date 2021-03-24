@@ -50,6 +50,15 @@ client.on('message', message => {
         case 'suggest':
             client.commands.get('suggestions').execute(message, args, Discord, client);
             break;
+        case 'faq':
+            client.commands.get('FAQ').execute(message, args, Discord, client);
+            break;
+        case 'rules':
+            client.commands.get('rules').execute(message, args, Discord, client);
+            break;
+        case 'event':
+            client.commands.get('events').execute(message, args, Discord, client);
+            break;
         default:
             break;
     }

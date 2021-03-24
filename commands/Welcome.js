@@ -5,14 +5,13 @@ module.exports = {
 
     async execute(message, args, Discord, client){
 
-        const channel = '811528675698016276';
+        const channel = '806079231645057034';
         ////////////////////////////////////////// ROLES ///////////////////////////////////////////
         // Accessing Created Roles from Discord Server
 
         const generalMember = message.guild.roles.cache.find(role => role.name === "General Member");
         const professional = message.guild.roles.cache.find(role => role.name === "Professional");
         const alumni = message.guild.roles.cache.find(role => role.name === "Alumni");
-        const visitor = message.guild.roles.cache.find(role => role.name === "Just Vibing");
 
         //////////////////////////////////// CUSTOM EMOJI ID's /////////////////////////////////////
         // Assigns ID's to Custom Emoji ID's.Use /: emojiname: in Dicord to find ID
@@ -24,11 +23,13 @@ module.exports = {
         //////////////////////////////////// MESSAGE EMBEDS /////////////////////////////////////
         // Creates Message Embed with Embed Color, Title, and Description
 
-        const announceDescrpt = `Keep up with <#762902109451583488> for important updates about upcoming events, workshops, and application deadlines! 
-                                 We will seldom use the @everyone ping, so please do not mute us But the @everyone ping will be used right before an event
+        const announceDescrpt = `Keep up with <#762902109451583488> for important updates about upcoming events, 
+                                 workshops, and application deadlines! We will seldom use the @everyone ping, so
+                                 please do not mute us but the @everyone ping will be used right before an event
                                  starts or when a deadline is approaching.`;
-        const recapDescrpt = `Missed a workshop or an event? We'll have the resources for you posted for you to look through on your own time. Recordings 
-                              may be released a bit later, but check respective text-channels for updates as to when we post it :smile:`;
+        const recapDescrpt = `Missed a **workshop** or an **event**? We'll have the resources for you posted for you to
+                              look through on your own time. Recordings may be released a bit later, but check
+                              respective text-channels for updates as to when we post it :smile:`;
         
         let rolesMessage = new Discord.MessageEmbed()
         .setColor('#f0633d')
@@ -39,13 +40,11 @@ module.exports = {
             + `${professionalEmoji} for Professional\n`
             + `you can choose your committee and other fun roles in the <#806079231645057034> text channel` );
 
-
         let anouncementsEmbed = new Discord.MessageEmbed()
             .setColor('#74aabe')
             .setTitle('Announcements')
             .setDescription(announceDescrpt);
 
-        
         let eventsEmbed = new Discord.MessageEmbed()
             .setColor('#f3f3f3')
             .setTitle('Recaps')

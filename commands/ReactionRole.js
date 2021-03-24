@@ -52,6 +52,7 @@ module.exports = {
         const transferEmoji = '<:transfer:807045116904472587>';
 
         // MAJOR
+        // MUST USE EMOJIS, FOR EXAMPLE DON'T USE 'rocket' INSTEAD OF OF 🚀
         const aero = '🚀';
         const chem = '🔋';
         const civil = '🛠';
@@ -102,12 +103,12 @@ module.exports = {
 
         // Message Embedded with Custom Year Reactions
         let yearEmbed = await message.channel.send(embed2);
+        yearEmbed.react(transferEmoji);
         yearEmbed.react(oneEmoji);
         yearEmbed.react(twoEmoji);
         yearEmbed.react(threeEmoji);
         yearEmbed.react(fourEmoji);
         yearEmbed.react(fifthEmoji);
-        yearEmbed.react(transferEmoji);
 
         // MAJOR
         let embed3 = new Discord.MessageEmbed()
@@ -132,6 +133,7 @@ module.exports = {
         majorEmbed.react(aero);
         majorEmbed.react(chem);
         majorEmbed.react(civil);
+        majorEmbed.react(comp);
         majorEmbed.react(cse);
         majorEmbed.react(elec);
         majorEmbed.react(env);
@@ -197,34 +199,35 @@ module.exports = {
                 }
 
                 // ADD MAJOR REACTION
-                if (reaction.emoji.name === 'sunglasses') {
+                        // MUST USE EMOJIS, FOR EXAMPLE DON'T USE 'rocket' INSTEAD OF OF 🚀
+                if (reaction.emoji.name === '🚀') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(aerospaceE);
                 }
-                if (reaction.emoji.name === 'innocent') {
+                if (reaction.emoji.name === '🔋') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(chemicalE);
                 }
-                if (reaction.emoji.name === 'upside_down') {
+                if (reaction.emoji.name === '🛠') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(civilE);
                 }
-                if (reaction.emoji.name === 'smiling_face_with_tear') {
+                if (reaction.emoji.name === '💻') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(computerE);
                 }
-                if (reaction.emoji.name === 'blush') {
+                if (reaction.emoji.name === '🖥') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(computerSciE);
                 }
-                if (reaction.emoji.name === 'stuck_out_tongue_closed_eyes') {
+                if (reaction.emoji.name === '🔌') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(electricalE);
                 }
-                if (reaction.emoji.name === 'relieved') {
+                if (reaction.emoji.name === '🌴') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(environmentalE);
                 }
-                if (reaction.emoji.name === 'grin') {
+                if (reaction.emoji.name === '⚙️') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(mechanicalE);
                 }
-                if (reaction.emoji.name === 'sweat_smile') {
+                if (reaction.emoji.name === '🦖') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(biologicalSci);
                 }
-                if (reaction.emoji.name === 'zany_face') {
+                if (reaction.emoji.name === '🖨') {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(computerSci);
                 }
             }
@@ -292,34 +295,35 @@ module.exports = {
                 }
 
                 // ADD MAJOR REACTION
-                if (reaction.emoji.name === 'sunglasses') {
+                        // MUST USE EMOJIS, FOR EXAMPLE DON'T USE 'rocket' INSTEAD OF OF 🚀
+                if (reaction.emoji.name === '🚀') {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(aerospaceE);
-                }                                                                
-                if (reaction.emoji.name === 'innocent') {                        
+                }                                                               
+                if (reaction.emoji.name === '🔋') {                        
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(chemicalE);
                 }                                                                
-                if (reaction.emoji.name === 'upside_down') {                     
+                if (reaction.emoji.name === '🛠') {                           
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(civilE);
-                }                                                                 
-                if (reaction.emoji.name === 'smiling_face_with_tear') {           
+                }                                                               
+                if (reaction.emoji.name === '💻') {                       
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(computerE);
                 }                                                                
-                if (reaction.emoji.name === 'blush') {                           
+                if (reaction.emoji.name === '🖥') {                         
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(computerSciE);
                 }                                                                 
-                if (reaction.emoji.name === 'stuck_out_tongue_closed_eyes') {     
+                if (reaction.emoji.name === '🔌') {                    
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(electricalE);
                 }                                                                 
-                if (reaction.emoji.name === 'relieved') {                         
+                if (reaction.emoji.name === '🌴') {                        
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(environmentalE);
-                }                                                                 
-                if (reaction.emoji.name === 'grin') {                             
+                }                                                               
+                if (reaction.emoji.name === '⚙️') {                           
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(mechanicalE);
                 }                                                                
-                if (reaction.emoji.name === 'sweat_smile') {                     
+                if (reaction.emoji.name === '🦖') {                           
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(biologicalSci);
-                }                                                                
-                if (reaction.emoji.name === 'zany_face') {                       
+                }                                                                 
+                if (reaction.emoji.name === '🖨') {                          
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(computerSci);
                 }
             }
