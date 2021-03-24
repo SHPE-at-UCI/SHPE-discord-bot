@@ -1,1 +1,1 @@
-# Tech Committee Discord Bot
+# SHPE Discord Bot
