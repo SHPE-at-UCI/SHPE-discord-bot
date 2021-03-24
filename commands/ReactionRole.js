@@ -9,7 +9,7 @@ module.exports = {
 
         const channel = '806176240393519185'; // "Roles" Channel ID
         const shpetinas = message.guild.roles.cache.find(role => role.name === "Shpetinas");
-        const professional = message.guild.roles.cache.find(role => role.name === "Professional");
+        const professional = message.guild.roles.cache.find(role => role.name === "Professional Commitee");
         const shpejr = message.guild.roles.cache.find(role => role.name === "SHPE Jr.");
         const techy = message.guild.roles.cache.find(role => role.name === "Tech");
         const eventsPlanning = message.guild.roles.cache.find(role => role.name === "Events Planning Committee");
