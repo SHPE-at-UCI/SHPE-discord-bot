@@ -73,8 +73,8 @@ module.exports = {
         // COMMITTEE
         let embed1 = new Discord.MessageEmbed()
             .setColor('#f0633d')
-            .setTitle('JOIN YOUR COMMITTEES')
-            .setDescription('Choosing your committee will alow you to interact with your fellow committee members! \n\n'
+            .setTitle('YOUR SHPE COMMITTEES')
+            .setDescription('Choosing your committee will allow you to interact with your fellow committee members! \n\n'
                 + `${shpetinasEmoji} for Shpetinas Committee\n`
                 + `${professionalEmoji} for Professional Committee\n`
                 + `${shpejrEmoji} for Shpe Jr. Committee\n`

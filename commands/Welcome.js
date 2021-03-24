@@ -5,7 +5,7 @@ module.exports = {
 
     async execute(message, args, Discord, client){
 
-        const channel = '806079231645057034';
+        const channel = '823761790634033163';
         ////////////////////////////////////////// ROLES ///////////////////////////////////////////
         // Accessing Created Roles from Discord Server
 
