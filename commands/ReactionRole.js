@@ -14,11 +14,11 @@ module.exports = {
         const techy = message.guild.roles.cache.find(role => role.name === "Tech");
         const eventsPlanning = message.guild.roles.cache.find(role => role.name === "Events Planning Committee");
 
-        const first = message.guild.roles.cache.find(role => role.name === "First Year");
-        const second = message.guild.roles.cache.find(role => role.name === "Second Year");
-        const third = message.guild.roles.cache.find(role => role.name === "Third Year");
-        const fourth = message.guild.roles.cache.find(role => role.name === "Fourth Year");
-        const fifth = message.guild.roles.cache.find(role => role.name === "Fifth Year");
+        const first = message.guild.roles.cache.find(role => role.name === "1st Year");
+        const second = message.guild.roles.cache.find(role => role.name === "2nd Year");
+        const third = message.guild.roles.cache.find(role => role.name === "3rd Year");
+        const fourth = message.guild.roles.cache.find(role => role.name === "4th Year");
+        const fifth = message.guild.roles.cache.find(role => role.name === "5th+ Year");
         const transfer = message.guild.roles.cache.find(role => role.name === "Transfer");
 
         const aerospaceE = message.guild.roles.cache.find(role => role.name === "Aerospace Engineering");
