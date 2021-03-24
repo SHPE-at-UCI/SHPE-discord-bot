@@ -1,14 +1,14 @@
 //libraries
 const Discord = require('discord.js');
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 const fs = require('fs');
 
 //global variables
 const prefix = '!';
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 
-//dotenv is used to set environment variable from your like your discord api key
-dotenv.config();
+// //dotenv is used to set environment variable from your like your discord api key
+// dotenv.config();
 
 //Discord.collection() works the same way array.map()
 client.commands = new Discord.Collection();
@@ -65,4 +65,4 @@ client.on('message', message => {
 });
 
 
-client.login(process.env.DISCORD_KEY);
+client.login(process.env.SHPE_KEY);
