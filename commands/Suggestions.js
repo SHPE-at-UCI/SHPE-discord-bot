@@ -13,5 +13,7 @@ module.exports = {
             .setColor('#f3f3f3')
             .setTitle('Suggestions?')
             .setDescription(suggestionDescrpt);
+
+        await message.channel.send(suggestionsEmbed)
     }
 }

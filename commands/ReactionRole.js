@@ -52,17 +52,17 @@ module.exports = {
         const transferEmoji = '<:transfer:807045116904472587>';
 
         // MAJOR
-        const aero = ':sunglasses:';
-        const chem = ':innocent:';
-        const civil = ':upside_down:';
-        const comp = ':smiling_face_with_tear:';
-        const cse = ':blush:';
-        const elec = ':stuck_out_tongue_closed_eyes:';
-        const env = ':relieved:';
-        const meche = ':grin:';
-        const biosci = ':sweat_smile:';
-        const compsci = ':zany_face:';
-        const notHere = ':scream:';
+        const aero = '🚀';
+        const chem = '🔋';
+        const civil = '🛠';
+        const comp = '💻';
+        const cse = '🖥';
+        const elec = '🔌';
+        const env = '🌴';
+        const meche = '⚙️';
+        const biosci = '🦖';
+        const compsci = '🖨';
+        const notHere = '😭';
 
 
 
