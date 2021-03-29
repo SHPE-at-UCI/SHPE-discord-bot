@@ -62,6 +62,9 @@ client.on('message', message => {
         case 'about':
             client.commands.get('about').execute(message, args, Discord, client);
             break;
+        case 'cac':
+            client.commands.get('create-a-channel').execute(message, args, Discord, client);
+
         default:
             break;
     }

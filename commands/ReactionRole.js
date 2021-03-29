@@ -8,10 +8,10 @@ module.exports = {
         // Accessing Created Roles from Discord Server
 
         const channel = '806176240393519185'; // "Roles" Channel ID
-        const shpetinas = message.guild.roles.cache.find(role => role.name === "SHPEtinas Committee");
-        const professional = message.guild.roles.cache.find(role => role.name === "Professional Committee");
-        const shpejr = message.guild.roles.cache.find(role => role.name === "SHPE Jr. Committee");
-        const techy = message.guild.roles.cache.find(role => role.name === "Tech Committee");
+        const shpetinas = message.guild.roles.cache.find(role => role.name === "SHPEtina");
+        const professional = message.guild.roles.cache.find(role => role.name === "Profesional");
+        const shpejr = message.guild.roles.cache.find(role => role.name === "SHPE Jr. Mentor");
+        const techy = message.guild.roles.cache.find(role => role.name === "Tech Officer");
         const eventsPlanning = message.guild.roles.cache.find(role => role.name === "Events Planning Committee");
 
         const first = message.guild.roles.cache.find(role => role.name === "1st Year");
