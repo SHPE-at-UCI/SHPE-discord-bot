@@ -31,7 +31,11 @@ client.on('message', message => {
     //look for !
     if(!message.content.startsWith(prefix)) return;
     
-    console.log(message.channel.id);
+    if(message.channel.id === "824154346031284225"){
+        message.channel.fetchMessages().then(function(list){
+            message.channel.bulkDelete(list);
+        }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})
+    }
 
     //parse message to get command  
     const args = message.content.slice(prefix.length).split(/ +/);
