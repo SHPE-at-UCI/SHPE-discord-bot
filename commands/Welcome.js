@@ -38,7 +38,6 @@ module.exports = {
         .setColor('#f0633d')
         .setTitle('Roles & Names')
         .setDescription(`**To access the SHPE Discord Channels we ask that you change your nickname to your __real name__ and choose a role from the following:** \n
-            If you are a part of __MemberSHPE__ please let a @Board member know in order to get access to our exclusive MemberSHPE channel!\n
             ${generalMemberEmoji} for General Members\n
             ${alumniEmoji} for Alumni\n
             ${professionalEmoji} for Professional\n
