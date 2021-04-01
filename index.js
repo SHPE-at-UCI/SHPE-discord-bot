@@ -25,28 +25,21 @@ for (const file of commandFiles) {
 client.once('ready', () => {
     console.log('SHPE bot is online!')
     client.channels.cache.get("824154346031284225").send(`!welcome`)    
-    // client.sendMessage("!welcome")
 });
 
 client.on('message', message => {
     //look for !
     if(!message.content.startsWith(prefix)) return;
     
+    const Channel = client.channels.cache.get("ChannelID");
+    console.log(Channel);
+    // Channel.messages.fetch("MessageID").then(message => message.delete())
+
     //parse message to get command  
     const args = message.content.slice(prefix.length).split(/ +/);
     let command = args.shift().toLowerCase();
 
     message.delete({ timeout: 1000 });
-    // let loopcommand = new Object();
-
-    // if (command === "loop") { 
-    //     var interval = setInterval (function (loopcommand) {
-    //         loopcommand.rr = "reactionrole"
-    //     },  2000); 
-    // }
-
-    // console.log(loopcommand.rr);
-    //list of commands
 
     switch (command) {
         case 'reactionrole':
