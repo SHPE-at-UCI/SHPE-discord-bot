@@ -32,7 +32,7 @@ client.on('message', message => {
     if(!message.content.startsWith(prefix)) return;
     
     if(message.channel.id === "824154346031284225"){
-        message.channel.fetchMessages().then(function(list){
+        message.channel.message.fetch().then(function(list){
             message.channel.bulkDelete(list);
         }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})
     }
