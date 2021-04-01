@@ -42,7 +42,7 @@ client.on('message', message => {
         .catch(console.error);
     }
 
-    //parse message to get command  
+    //parse message to get commands
     const args = message.content.slice(prefix.length).split(/ +/);
     let command = args.shift().toLowerCase();
 
