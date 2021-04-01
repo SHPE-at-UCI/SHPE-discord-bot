@@ -24,21 +24,20 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log('SHPE bot is online!')
-    // client.channels.cache.get("824154346031284225").send(`!welcome`)
-    client.channels.cache.get("824154346031284225").send(`!reactionrole`)     
->>>>>>> 62d34c0c7b5ae9f8bc5674e187fb88ce8a7aed9a
+    client.channels.cache.get("823761790634033163").send(`!welcome`)
+    client.channels.cache.get("806176240393519185").send(`!reactionrole`)
 });
 
 client.on('message', message => {
     //look for !
     if(!message.content.startsWith(prefix)) return;
     
-    // if(message.channel.id === "824154346031284225"){
-    //     message.channel.bulkDelete(1)
-    //     .catch(console.error);
-    // }
+    if(message.channel.id === "823761790634033163"){
+        message.channel.bulkDelete(2)
+        .catch(console.error);
+    }
 
-    if(message.channel.id === "824154346031284225"){
+    if(message.channel.id === "806176240393519185"){
         message.channel.bulkDelete(4)
         .catch(console.error);
     }
