@@ -2,7 +2,7 @@ module.exports = {
     name: 'reactionrole',
     description: "Sets up roles and committees",
 
-    async execute(message, args, Discord, client)
+    async execute(message, Discord, client)
     {
         ////////////////////////////////////////// ROLES ///////////////////////////////////////////
         // Accessing Created Roles from Discord Server
