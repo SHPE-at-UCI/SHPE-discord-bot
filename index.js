@@ -31,9 +31,7 @@ client.on('message', message => {
     //look for !
     if(!message.content.startsWith(prefix)) return;
     
-    const Channel = client.channels.cache.get("ChannelID");
-    console.log(Channel);
-    // Channel.messages.fetch("MessageID").then(message => message.delete())
+    console.log(message.channel.id);
 
     //parse message to get command  
     const args = message.content.slice(prefix.length).split(/ +/);
