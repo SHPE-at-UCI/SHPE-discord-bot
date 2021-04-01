@@ -12,7 +12,7 @@ module.exports = {
         const professional = message.guild.roles.cache.find(role => role.name === "Profesional");
         const shpejr = message.guild.roles.cache.find(role => role.name === "SHPE Jr. Mentor");
         const techy = message.guild.roles.cache.find(role => role.name === "Tech Officer");
-        const eventsPlanning = message.guild.roles.cache.find(role => role.name === "Events Planning Committee");
+        const eventsPlanning = message.guild.roles.cache.find(role => role.name === "EPC Officer");
 
         const first = message.guild.roles.cache.find(role => role.name === "1st Year");
         const second = message.guild.roles.cache.find(role => role.name === "2nd Year");
