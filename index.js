@@ -41,7 +41,6 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     let command = args.shift().toLowerCase();
 
-    // message.delete({ timeout: 1000 });
 
     switch (command) {
         case 'reactionrole':
