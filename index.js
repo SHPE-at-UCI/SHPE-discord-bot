@@ -32,16 +32,16 @@ client.on('message', message => {
     if(!message.content.startsWith(prefix)) return;
     
     if(message.channel.id === "824154346031284225"){
-        message.channel.message.fetch().then(function(list){
-            message.channel.bulkDelete(list);
-        }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})
+        message.channel.bulkDelete(2)
+        .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
+        .catch(console.error);
     }
 
     //parse message to get command  
     const args = message.content.slice(prefix.length).split(/ +/);
     let command = args.shift().toLowerCase();
 
-    message.delete({ timeout: 1000 });
+    // message.delete({ timeout: 1000 });
 
     switch (command) {
         case 'reactionrole':
