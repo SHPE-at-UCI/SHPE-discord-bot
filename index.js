@@ -25,6 +25,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log('SHPE bot is online!')
+    command
 });
 
 

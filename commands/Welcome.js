@@ -12,6 +12,8 @@ module.exports = {
         const generalMember = message.guild.roles.cache.find(role => role.name === "General Member");
         const professional = message.guild.roles.cache.find(role => role.name === "Professional");
         const alumni = message.guild.roles.cache.find(role => role.name === "Alumni");
+        const membershpe = message.guild.roles.cache.find(role => role.name === "MemberSHPE");
+
 
         //////////////////////////////////// CUSTOM EMOJI ID's /////////////////////////////////////
         // Assigns ID's to Custom Emoji ID's.Use /: emojiname: in Dicord to find ID
@@ -19,6 +21,7 @@ module.exports = {
         const generalMemberEmoji = '<:generalmember:824147467117002752>';
         const alumniEmoji = '<:alumni:824147467159076894>';
         const professionalEmoji = '<:professionalrole:824147466953818153>';
+        const membershpeEmoji = '<:memberSHPE:827048282358153277>';
 
         //////////////////////////////////// MESSAGE EMBEDS /////////////////////////////////////
         // Creates Message Embed with Embed Color, Title, and Description
@@ -39,6 +42,7 @@ module.exports = {
             ${generalMemberEmoji} for General Members\n
             ${alumniEmoji} for Alumni\n
             ${professionalEmoji} for Professional\n
+            ${membershpeEmoji} for MemberSHPE\n
             you can choose your committee and other fun roles in the #roles text channel `);
 
         /*
@@ -59,6 +63,7 @@ module.exports = {
             sentEmbed.react(generalMemberEmoji)
             sentEmbed.react(alumniEmoji)
             sentEmbed.react(professionalEmoji)
+            sentEmbed.react(membershpeEmoji)
         }).catch(() => console.error('One of the emojis failed to react.'));
     
 
@@ -83,6 +88,9 @@ module.exports = {
                         break;
                     case "professionalrole":
                         await reaction.message.guild.members.cache.get(user.id).roles.add(professional);
+                        break;
+                    case "memberSHPE":
+                        await reaction.message.guild.members.cache.get(user.id).roles.add(membershpe);
                         break;
                     default:
                         break;
@@ -112,6 +120,9 @@ module.exports = {
                         break;
                     case "professionalrole":
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(professional);
+                        break;
+                    case "memberSHPE":
+                        await reaction.message.guild.members.cache.get(user.id).roles.remove(membershpe);
                         break;
                     default:
                         break;
