@@ -24,7 +24,8 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log('SHPE bot is online!')
-    client.channels.cache.get("824154346031284225").send(`!welcome`)    
+    client.channels.cache.get("824154346031284225").send(`!welcome`)
+    // client.channels.cache.get("824154346031284225").send(`!reactionrole`)     
 });
 
 client.on('message', message => {
