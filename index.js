@@ -38,7 +38,7 @@ client.on('message', message => {
     // }
 
     if(message.channel.id === "824154346031284225"){
-        message.channel.bulkDelete(1)
+        message.channel.bulkDelete(4)
         .catch(console.error);
     }
 
@@ -46,7 +46,7 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     let command = args.shift().toLowerCase();
 
-    message.delete({ timeout: 1000 });
+    // message.delete({ timeout: 1000 });
 
     switch (command) {
         case 'reactionrole':
