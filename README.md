@@ -1,4 +1,5 @@
 # SHPE Discord Bot
+SHPE Bot was created to further enrich our SHPE Familia's experience through discord. 
 
 # Video Walkthrough
 <img src='./pictures/shpe bot - readme.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
