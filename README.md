@@ -1,5 +1,5 @@
 # SHPE Discord Bot
-SHPE Bot was created to further enrich our SHPE Familia's experience through discord. 
+SHPE Bot was created to further enrich our SHPE Familia's experience through discord. It uses Node JS, Discord's API, and Heroku (hosts bot).
 
 # Video Walkthrough
 <img src='./pictures/shpe bot - readme.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
