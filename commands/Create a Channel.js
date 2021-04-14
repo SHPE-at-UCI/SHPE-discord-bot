@@ -5,7 +5,7 @@ module.exports = {
 
     async execute(message, args, Discord, client) {
 
-        const channelDescrpt = `As per our rules, to create a channel in this category, you need a group of three people to achieve this. Send a channel suggestion here. If your message receives 3 reactions, not including your own, we will create this channel if it is within our community guidelines.`;
+        const channelDescrpt = `As per our rules, to create a channel in this category, you need a group of seven people to achieve this. Send a channel suggestion here. If your message receives 7 reactions, not including your own, we will create this channel if it is within our community guidelines.`;
 
 
         let channelEmbed = new Discord.MessageEmbed()
