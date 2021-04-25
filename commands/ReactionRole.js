@@ -11,7 +11,7 @@ module.exports = {
         const shpetinas = message.guild.roles.cache.find(role => role.name === "SHPEtina");
         const professional = message.guild.roles.cache.find(role => role.name === "Profesional");
         const shpejr = message.guild.roles.cache.find(role => role.name === "SHPE Jr. Mentor");
-        const techy = message.guild.roles.cache.find(role => role.name === "Tech Officer");
+        const techy = message.guild.roles.cache.find(role => role.name === "Tech Committee");
         const eventsPlanning = message.guild.roles.cache.find(role => role.name === "EPC Officer");
 
         const first = message.guild.roles.cache.find(role => role.name === "1st Year");
